@@ -3,7 +3,7 @@
 text-align: center;
  margin: 0 auto;
  padding-top: 200px;
- width: 400px;
+
 }
 h2 {
  text-align: center;
@@ -13,7 +13,7 @@ h2 {
 .calculator-screen {
  width: 100%;
  height: 100px;
- background-color: #2525252;
+ background-color: #252525;
  color: #fff;
  text-align: right;
  font-size:36px;
