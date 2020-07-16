@@ -5,8 +5,11 @@ const updateScreen = (number) => {
 }
 
 cons numbers = document.querySelectorAll(".number")
+console.log(numbers)
 numbers.forEach((number) => {
+ console.log(numbers)
  number.addEventListener("click", (event) => {
+  console.log("number is pressed")
   console.log(event.target.value)
   updateScreen(currentNumber)
  })
