@@ -1,54 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <title>Kalkulator SCREEN DTS</title>
- <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
- <div class="calculator">
-  <h1>Kalkulator Screen DTS</h1>
- 
-   <input type="text" class="calculator-screen" value="0" disabled />
-  
-  <div class="calculator-keys">
-  <div class="row">
-   <button class="all-clear">AC</button>
-   <button class="percentage">%</button>
-   <button class="operator">&divide</button>
-    </div>
-   
-   <div class="row">
-   <button class="number">7</button>
-   <button class="number">8</button>
-   <button class="number">9</button>
-    <button class="operator">&times;</button>
-   </div>
-     
-   <div class="row">
-   <button class="number">4</button>
-   <button class="number">5</button>
-   <button class="number">6</button>
-    <button class="operator">-</button>
-   </div>
-        
-   <div class="row">
-   <button class="number">1</button>
-   <button class="number">2</button>
-   <button class="number">3</button>
-    <button class="operator">+</button>
-   </div>
-   
-      <div class="row">
-   <button class="number zero-btn">0</button>
-   <button class="decimal">.</button>
-   <button class="equal-sign">=</button>
-   </div>
-   
-  
 
+.calculator {
+text-align: center;
+ margin: 0 auto;
+ padding-top: 200px;
+ width: 400px;
+}
 
- </div>
- <script type="text/javascript" src="script.js"></script>
-</body>
-</html>
+.calculator-screen {
+ width: 100%;
+ height: 100px;
+ background-color: #252525;
+ color: #fff;
+ text-align: right;
+ font-size:36px;
+ border: none;
+ padding: 0 20px;
+ box-sizing: border-box;
+}
+
+.calculator-keys{
+ width: 100%;
+}
+
+.row{
+ display: flex;
+}
+
+button {
+ height: 80px;
+ background-color: gray;
+ border: 1px solid black;
+ font-size:32px;
+ color: #fff;
+ width: 25%;
+ outline: none;
+}
+
+.all-clear, .zero-btn{
+ width: 50%;
+}
+
+.operator, .equal-sign {
+ background-color : orange;
+}
+
+button:hover{
+ background-color : darkgray;
+}
+
+.operator:hover, .equal-sign:hover{
+ background-color : darkorange;
+}
